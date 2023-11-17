@@ -1,0 +1,7 @@
+{
+  "name": "dolya-front",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
