@@ -4,7 +4,7 @@
 			<div class="prose flex h-full flex-col items-center justify-center p-4">
 				<h2 class="text-center">
 					Приветствуем вас в приложении
-					<ion-text color="primary">Dolya Front</ion-text>
+					<ion-text class="text-medium">Dolya Front</ion-text>
 				</h2>
 				<ion-button shape="round" router-link="local-signup">
 					Зарегестрироваться
