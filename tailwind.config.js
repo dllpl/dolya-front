@@ -1,7 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+	plugins: [require('@tailwindcss/typography')],
 	theme: {
+		fontFamily: {
+			sans: ['var(--ion-font-family)']
+		},
 		colors: {
 			primary: {
 				DEFAULT: 'var(--ion-color-primary)',
@@ -58,6 +62,5 @@ export default {
 				tint: 'var(--ion-color-light-tint)'
 			}
 		}
-	},
-	plugins: [require('@tailwindcss/typography')]
+	}
 };

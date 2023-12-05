@@ -17,7 +17,9 @@
   "rules": {
     "simple-import-sort/imports": "error",
     "vue/block-order": ["error", {
-      "order": ["template", "script", "style"]
-    }]
+      "order": ["script", "template", "style"]
+    }],
+    "vue/no-deprecated-slot-attribute": "off",
+    "@typescript-eslint/consistent-type-imports": "error"
   }
 }

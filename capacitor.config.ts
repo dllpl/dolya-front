@@ -1,8 +1,8 @@
-import { CapacitorConfig } from '@capacitor/cli';
+import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-	appId: 'io.ionic.starter',
-	appName: 'dolya-front',
+	appId: 'io.dolya.starter',
+	appName: 'Доля',
 	webDir: 'dist',
 	server: {
 		androidScheme: 'https'

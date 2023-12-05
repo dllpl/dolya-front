@@ -1,13 +1,15 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
-import { RouteRecordRaw } from 'vue-router';
+import type { RouteRecordRaw } from 'vue-router';
 
-import HomePage from '@/views/HomePage.vue';
-import SignupLocalPage from '@/views/SignupLocalPage.vue';
+import { authGuard, noAuthGuard } from '@/router/auth-guard';
+import GreetingPage from '@/views/GreetingPage.vue';
+import MeetsPage from '@/views/MeetsPage.vue';
+import SignupPage from '@/views/SignupPage.vue';
 
 const routes: Array<RouteRecordRaw> = [
-	{ path: '/', redirect: '/home' },
-	{ path: '/home', name: 'Home', component: HomePage },
-	{ path: '/signup', name: 'Signup', component: SignupLocalPage }
+	{ path: '/', name: 'Greeting', component: GreetingPage, beforeEnter: noAuthGuard },
+	{ path: '/signup', name: 'Signup', component: SignupPage, beforeEnter: noAuthGuard },
+	{ path: '/meets', name: 'Meets', component: MeetsPage, beforeEnter: authGuard }
 ];
 
 const router = createRouter({
